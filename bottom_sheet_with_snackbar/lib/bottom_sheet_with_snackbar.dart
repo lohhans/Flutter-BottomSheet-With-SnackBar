@@ -97,10 +97,52 @@ class _BottomSheetWithSnackBarState extends State<BottomSheetWithSnackBar> {
           // PT-BR: O "body" real da aplicação se encontra aqui, neste caso só tem o botão que chama a SnackBar,
           // mas caso queira mostrar mais informações use uma "Column" ou algo semelhante para manter um widget único acima do último widget...
           Center(
-            child: ElevatedButton(
-              child: const Text('BOTTOMSHEET'),
-              onPressed: _showPersistentBottomSheetCallBack,
-            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                    child: Text('DEFAULT FLUTTER BOTTOMSHEET'),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.redAccent,
+                    ),
+                    onPressed: () {
+                      showModalBottomSheet<void>(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return Container(
+                            height: 200,
+                            color: Colors.red,
+                            child: Center(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: Colors.white,
+                                    ),
+                                    child: const Text('SNACKBAR', style: TextStyle(color: Colors.black),),
+                                    onPressed: () => ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("It's hidden :("))),
+                                  )
+                                ],
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    }
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.blueAccent,
+                  ),
+                  child: const Text('BOTTOMSHEET WITH SNACKBAR'),
+                  onPressed: _showPersistentBottomSheetCallBack,
+                ),
+                // SizedBox(height: 16,),
+
+              ],
+            )
           ),
 
           // EN: Again the "if" is used to "do the work" only when the BottomSheet is open, and in this case,
