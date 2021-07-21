@@ -1,5 +1,5 @@
 name: bottom_sheet_with_snackbar
-description: A demonstration of how a persistent BottomSheet works with SnackBar.
+description: An approach how Flutter BottomSheet should works with SnackBars on Flutter.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
