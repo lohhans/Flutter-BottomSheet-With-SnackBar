@@ -1,5 +1,11 @@
 # Flutter BottomSheet With SnackBar
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![AGPL-3.0 License][license-shield]][license-url]
+
 An approach how [BottomSheet](https://api.flutter.dev/flutter/material/showModalBottomSheet.html) should works with [SnackBars](https://flutter.dev/docs/cookbook/design/snackbars) on Flutter.
 
 ## What does it mean?
@@ -18,3 +24,15 @@ If you have a general question about these sample or how to adapt its techniques
 
 
 Author: Armstrong Lohãns - 2021
+
+<!-- Links -->
+[contributors-shield]: https://img.shields.io/github/contributors/lohhans/Flutter-BottomSheet-With-SnackBar.svg?style=flat-square
+[contributors-url]: https://github.com/lohhans/Flutter-BottomSheet-With-SnackBar/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/lohhans/Flutter-BottomSheet-With-SnackBar.svg?style=flat-square
+[forks-url]: https://github.com/lohhans/Flutter-BottomSheet-With-SnackBar/network/members
+[stars-shield]: https://img.shields.io/github/stars/lohhans/Flutter-BottomSheet-With-SnackBar.svg?style=flat-square
+[stars-url]: https://github.com/lohhans/Flutter-BottomSheet-With-SnackBar/stargazers
+[issues-shield]: https://img.shields.io/github/issues/lohhans/Flutter-BottomSheet-With-SnackBar.svg?style=flat-square
+[issues-url]: https://github.com/lohhans/Flutter-BottomSheet-With-SnackBar/issues
+[license-shield]: https://img.shields.io/github/license/lohhans/Flutter-BottomSheet-With-SnackBar.svg?style=flat-square
+[license-url]: https://github.com/lohhans/Flutter-BottomSheet-With-SnackBar/blob/master/LICENSE
